@@ -33,7 +33,7 @@ const AdminLogin = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#030014] via-[#140003] to-[#030014] flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-[#0f1729] via-[#0f1729] to-[#0f1729] flex items-center justify-center p-4">
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-blue-600/10 blur-3xl animate-pulse" />
@@ -144,5 +144,8 @@ const AdminLogin = () => {
 };
 
 export default AdminLogin;
+
+
+
 
 

@@ -55,7 +55,7 @@ const AdminLayout = ({ children, activePage }) => {
   const adminUser = sessionStorage.getItem('adminUser') || 'Admin';
 
   return (
-    <div className="min-h-screen bg-[#030014]">
+    <div className="min-h-screen bg-[#0f1729]">
       {/* Top Navigation Bar */}
       <nav className="fixed top-0 left-0 right-0 h-16 bg-white/5 backdrop-blur-lg border-b border-white/10 z-50">
         <div className="h-full px-4 flex items-center justify-between">
@@ -140,5 +140,8 @@ const AdminLayout = ({ children, activePage }) => {
 };
 
 export default AdminLayout;
+
+
+
 
 

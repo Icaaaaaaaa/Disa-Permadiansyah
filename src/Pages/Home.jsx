@@ -95,13 +95,13 @@ const LaptopShowcase = memo(() => (
     <div
       className="absolute -inset-16 opacity-70 blur-3xl"
       style={{
-        background: "radial-gradient(circle at top, rgba(244,63,94,0.35), transparent 60%)"
+        background: "radial-gradient(circle at top, rgba(96,165,250,0.35), transparent 60%)"
       }}
     />
     <div
       className="absolute -inset-12 opacity-60 blur-3xl"
       style={{
-        background: "radial-gradient(circle at bottom, rgba(239,68,68,0.25), transparent 60%)"
+        background: "radial-gradient(circle at bottom, rgba(59,130,246,0.25), transparent 60%)"
       }}
     />
     <div className="absolute inset-0 rounded-[36px] bg-gradient-to-br from-white/10 via-white/5 to-transparent opacity-80" />
@@ -109,7 +109,7 @@ const LaptopShowcase = memo(() => (
       <div
         className="absolute inset-0 rounded-[34px] opacity-90"
         style={{
-          background: "radial-gradient(circle at top, rgba(244,63,94,0.2), transparent 60%)"
+          background: "radial-gradient(circle at top, rgba(96,165,250,0.2), transparent 60%)"
         }}
       />
       <div
@@ -127,7 +127,7 @@ const LaptopShowcase = memo(() => (
 
       <div className="absolute top-4 left-6 right-6 flex items-center justify-between text-[0.6rem] uppercase tracking-[0.35em] text-gray-400">
         <div className="flex items-center gap-2">
-          <span className="w-2.5 h-2.5 rounded-full bg-blue-500/90 shadow-[0_0_10px_rgba(239,68,68,0.8)]" />
+          <span className="w-2.5 h-2.5 rounded-full bg-blue-500/90 shadow-[0_0_10px_rgba(59,130,246,0.8)]" />
           <span>System Online</span>
         </div>
         <span className="text-blue-300/80">IT Core</span>
@@ -137,7 +137,7 @@ const LaptopShowcase = memo(() => (
         <div className="relative w-[82%] sm:w-[78%] h-[60%] translate-y-2">
           <div className="absolute inset-0 rounded-[24px] bg-gradient-to-br from-white/15 via-white/5 to-white/10 p-[1px]">
             <div className="absolute inset-[1px] rounded-[23px] bg-gradient-to-br from-[#0b1326]/95 via-[#0c1a2d]/90 to-[#0a101f]/95 border border-white/10 shadow-[0_18px_45px_rgba(0,0,0,0.6)]">
-              <div className="absolute inset-0 rounded-[23px] bg-[radial-gradient(circle_at_top,rgba(244,63,94,0.18),transparent_65%)]" />
+              <div className="absolute inset-0 rounded-[23px] bg-[radial-gradient(circle_at_top,rgba(96,165,250,0.18),transparent_65%)]" />
               <div className="absolute top-3 left-4 right-4 flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-blue-400/80" />
                 <span className="w-2 h-2 rounded-full bg-blue-400/60" />
@@ -334,7 +334,7 @@ const Home = () => {
   }, [handleTyping]);
 
   return (
-    <div className="min-h-screen bg-[#140003] overflow-hidden px-[5%] sm:px-[5%] lg:px-[10%] pt-32 sm:pt-20 md:pt-0" id="Home">
+    <div className="min-h-screen bg-[#0f1729] overflow-hidden px-[5%] sm:px-[5%] lg:px-[10%] pt-32 sm:pt-20 md:pt-0" id="Home">
       <div className={`relative z-10 transition-all duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`}>
         <div className="container mx-auto min-h-screen">
           <div className="flex flex-col lg:flex-row items-center justify-center min-h-screen md:justify-between gap-8 sm:gap-12 lg:gap-20">
@@ -399,5 +399,8 @@ const Home = () => {
 };
 
 export default memo(Home);
+
+
+
 
 

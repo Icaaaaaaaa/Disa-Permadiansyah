@@ -93,9 +93,9 @@ const Navbar = () => {
         <nav
             className={`fixed w-full top-0 z-50 transition-all duration-500 ${
                 isOpen
-                    ? "bg-[#030014]"
+                    ? "bg-[#0f1729]"
                     : scrolled
-                    ? "bg-[#030014]/50 backdrop-blur-xl"
+                    ? "bg-[#0f1729]/50 backdrop-blur-xl"
                     : "bg-transparent"
             }`}
         >
@@ -196,5 +196,8 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
 
 

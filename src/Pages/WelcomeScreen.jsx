@@ -32,16 +32,16 @@ const TypewriterEffect = ({ text, speed = 260 }) => {
 
 const BackgroundEffect = () => (
   <div className="absolute inset-0 overflow-hidden">
-    <div className="absolute inset-0 bg-[#140003]" />
+    <div className="absolute inset-0 bg-[#0f1729]" />
     <div
       className="absolute inset-0 opacity-70"
-      style={{ background: "radial-gradient(circle at top, rgba(239,68,68,0.25), transparent 60%)" }}
+      style={{ background: "radial-gradient(circle at top, rgba(59,130,246,0.25), transparent 60%)" }}
     />
     <div
       className="absolute inset-0 opacity-50"
-      style={{ background: "radial-gradient(circle at bottom, rgba(244,63,94,0.2), transparent 60%)" }}
+      style={{ background: "radial-gradient(circle at bottom, rgba(96,165,250,0.2), transparent 60%)" }}
     />
-    <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(220,38,38,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(220,38,38,0.08)_1px,transparent_1px)] bg-[size:28px_28px] opacity-30" />
+    <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(59,130,246,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(59,130,246,0.08)_1px,transparent_1px)] bg-[size:28px_28px] opacity-30" />
     <div className="absolute -top-24 left-1/2 h-48 w-72 -translate-x-1/2 rounded-full bg-blue-500/20 blur-3xl animate-pulse" />
     <div className="absolute -bottom-32 right-10 h-56 w-56 rounded-full bg-blue-500/20 blur-3xl animate-float" />
   </div>
@@ -50,7 +50,7 @@ const BackgroundEffect = () => (
 const IconButton = ({ Icon, label, delay }) => (
   <div className="relative group animate-float flex-shrink-0" style={{ animationDelay: delay }}>
     <div className="absolute -inset-1 bg-gradient-to-r from-blue-600/30 to-blue-600/30 rounded-lg sm:rounded-xl blur opacity-0 group-hover:opacity-70 transition duration-300" />
-    <div className="relative flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg sm:rounded-xl bg-[#0f0014]/70 border border-white/10 backdrop-blur-sm whitespace-nowrap">
+    <div className="relative flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg sm:rounded-xl bg-[#0f1729]/70 border border-white/10 backdrop-blur-sm whitespace-nowrap">
       <span className="flex h-4 sm:h-5 w-4 sm:w-5 items-center justify-center rounded-full bg-blue-500/20 flex-shrink-0">
         <Icon className="w-2.5 sm:w-3 h-2.5 sm:h-3 text-blue-200" />
       </span>
@@ -119,7 +119,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
     <AnimatePresence>
       {isLoading && (
         <motion.div
-          className="fixed inset-0 bg-[#140003]"
+          className="fixed inset-0 bg-[#0f1729]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit="exit"
@@ -131,7 +131,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
             <div className="w-full max-w-6xl mx-auto">
               <div className="relative rounded-2xl sm:rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-2xl px-4 py-6 sm:px-8 sm:py-10 md:px-10 md:py-12 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-blue-500/10"></div>
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(244,63,94,0.16),transparent_60%)]"></div>
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(96,165,250,0.16),transparent_60%)]"></div>
                 <div className="absolute -left-1/3 top-0 h-full w-1/3 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-40 animate-[shine_10s_ease-in-out_infinite]" />
                 <div className="absolute -right-10 top-6 hidden lg:block text-[7rem] font-semibold tracking-[0.2em] text-white/5">
                   WELCOME
@@ -207,9 +207,9 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
                     animate={{ y: [0, -8, 0] }}
                     transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
                   >
-                    <div className="absolute inset-0 rounded-2xl sm:rounded-[28px] border border-white/10 bg-[#0c0010]/80 backdrop-blur-2xl overflow-hidden">
-                      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(244,63,94,0.2),transparent_60%)]"></div>
-                      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(220,38,38,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(220,38,38,0.08)_1px,transparent_1px)] bg-[size:24px_24px] opacity-30"></div>
+                    <div className="absolute inset-0 rounded-2xl sm:rounded-[28px] border border-white/10 bg-[#0f1729]/80 backdrop-blur-2xl overflow-hidden">
+                      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(96,165,250,0.2),transparent_60%)]"></div>
+                      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(59,130,246,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(59,130,246,0.08)_1px,transparent_1px)] bg-[size:24px_24px] opacity-30"></div>
                       <div className="absolute inset-0 overflow-hidden">
                         <div className="absolute -top-1/2 left-0 right-0 h-1/2 bg-gradient-to-b from-blue-500/10 via-transparent to-transparent animate-scanline"></div>
                       </div>
@@ -245,7 +245,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
                           </motion.div>
 
                           <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="rounded-full border border-blue-500/30 bg-[#140003]/80 px-3 sm:px-4 py-1 sm:py-2 text-[0.5rem] sm:text-[0.6rem] uppercase tracking-[0.3em] sm:tracking-[0.35em] text-blue-200">
+                            <div className="rounded-full border border-blue-500/30 bg-[#0f1729]/80 px-3 sm:px-4 py-1 sm:py-2 text-[0.5rem] sm:text-[0.6rem] uppercase tracking-[0.3em] sm:tracking-[0.35em] text-blue-200">
                               Welcome
                             </div>
                           </div>
@@ -277,5 +277,8 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
 };
 
 export default WelcomeScreen;
+
+
+
 
 

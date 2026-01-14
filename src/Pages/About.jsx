@@ -43,7 +43,7 @@ const ProfileImage = memo(({ photoUrl }) => (
       </div>
 
       <div className="relative">
-        <div className="w-72 h-72 sm:w-80 sm:h-80 rounded-full overflow-hidden shadow-[0_0_40px_rgba(220,38,38,0.3)] transform transition-all duration-700 group-hover:scale-105">
+        <div className="w-72 h-72 sm:w-80 sm:h-80 rounded-full overflow-hidden shadow-[0_0_40px_rgba(59,130,246,0.3)] transform transition-all duration-700 group-hover:scale-105">
           <div className="absolute inset-0 border-4 border-white/20 rounded-full z-20 transition-all duration-700 group-hover:border-white/40 group-hover:scale-105" />
           
           {/* Optimized overlay effects - disabled on mobile */}
@@ -75,7 +75,7 @@ const StatCard = memo(({ icon: Icon, color, value, label, description, animation
     <div className="relative rounded-3xl p-[1px] bg-gradient-to-br from-white/20 via-white/5 to-white/10">
       <div className="relative rounded-3xl bg-[#120008]/70 border border-white/10 backdrop-blur-xl p-6 overflow-hidden h-full">
         <div className={`absolute inset-0 bg-gradient-to-br ${color} opacity-[0.08]`}></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(244,63,94,0.18),transparent_60%)] opacity-70"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(96,165,250,0.18),transparent_60%)] opacity-70"></div>
         <div className="absolute -top-1/2 left-0 right-0 h-1/2 bg-gradient-to-b from-blue-500/10 via-transparent to-transparent animate-scanline"></div>
         <div className="absolute top-0 -left-full h-full w-1/3 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-20 animate-[shine_7s_ease-in-out_infinite]"></div>
 
@@ -362,5 +362,8 @@ const AboutPage = () => {
 };
 
 export default memo(AboutPage);
+
+
+
 
 

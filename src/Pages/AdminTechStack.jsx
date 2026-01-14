@@ -319,7 +319,7 @@ const AdminTechStack = () => {
 
       {showModal && (
         <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 z-50 overflow-y-auto">
-          <div className="bg-[#140003] border border-white/10 rounded-xl w-full max-w-2xl my-8">
+          <div className="bg-[#0f1729] border border-white/10 rounded-xl w-full max-w-2xl my-8">
             <div className="flex items-center justify-between p-6 border-b border-white/10">
               <h2 className="text-2xl font-bold text-white">
                 {editingStack ? 'Edit Tech Stack' : 'Add Tech Stack'}
@@ -462,5 +462,8 @@ const AdminTechStack = () => {
 };
 
 export default AdminTechStack;
+
+
+
 
 
