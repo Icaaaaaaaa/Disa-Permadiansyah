@@ -9,10 +9,10 @@ import { supabase } from "../supabase"
 const StatusBadge = memo(() => (
   <div className="inline-block animate-float lg:mx-0" data-aos="zoom-in" data-aos-delay="400">
     <div className="relative group">
-      <div className="absolute -inset-0.5 bg-gradient-to-r from-red-500 to-rose-500 rounded-full blur opacity-30 group-hover:opacity-50 transition duration-1000"></div>
+      <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-blue-500 rounded-full blur opacity-30 group-hover:opacity-50 transition duration-1000"></div>
       <div className="relative px-3 sm:px-4 py-2 rounded-full bg-black/40 backdrop-blur-xl border border-white/10">
-        <span className="bg-gradient-to-r from-red-400 to-rose-400 text-transparent bg-clip-text sm:text-sm text-[0.7rem] font-medium flex items-center">
-          <Sparkles className="sm:w-4 sm:h-4 w-3 h-3 mr-2 text-red-400" />
+        <span className="bg-gradient-to-r from-blue-400 to-blue-400 text-transparent bg-clip-text sm:text-sm text-[0.7rem] font-medium flex items-center">
+          <Sparkles className="sm:w-4 sm:h-4 w-3 h-3 mr-2 text-blue-400" />
           Ready to Innovate
         </span>
       </div>
@@ -33,8 +33,8 @@ const MainTitle = memo(({ title }) => {
       <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl font-bold" style={{ letterSpacing: '0.05em' }}>
         {/* First Line */}
         <span className="relative inline-block">
-          <span className="absolute -inset-2 bg-gradient-to-r from-red-500 to-rose-500 blur-2xl opacity-20"></span>
-          <span className="relative bg-gradient-to-r from-white via-red-100 to-rose-200 bg-clip-text text-transparent">
+          <span className="absolute -inset-2 bg-gradient-to-r from-blue-500 to-blue-500 blur-2xl opacity-20"></span>
+          <span className="relative bg-gradient-to-r from-white via-blue-100 to-blue-200 bg-clip-text text-transparent">
             {firstLine}
           </span>
         </span>
@@ -44,8 +44,8 @@ const MainTitle = memo(({ title }) => {
           <>
             <br />
             <span className="relative inline-block mt-2">
-              <span className="absolute -inset-2 bg-gradient-to-r from-red-500 to-rose-500 blur-2xl opacity-20"></span>
-              <span className="relative bg-gradient-to-r from-red-400 to-rose-400 bg-clip-text text-transparent">
+              <span className="absolute -inset-2 bg-gradient-to-r from-blue-500 to-blue-500 blur-2xl opacity-20"></span>
+              <span className="relative bg-gradient-to-r from-blue-400 to-blue-400 bg-clip-text text-transparent">
                 {secondLine}
               </span>
             </span>
@@ -65,9 +65,9 @@ const TechStack = memo(({ tech }) => (
 const CTAButton = memo(({ href, text, icon: Icon }) => (
   <a href={href}>
     <button className="group relative w-[160px]">
-      <div className="absolute -inset-0.5 bg-gradient-to-r from-red-600 to-rose-600 rounded-xl opacity-50 blur-md group-hover:opacity-90 transition-all duration-700"></div>
+      <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-blue-600 rounded-xl opacity-50 blur-md group-hover:opacity-90 transition-all duration-700"></div>
       <div className="relative h-11 bg-[#020617] backdrop-blur-xl rounded-lg border border-white/10 leading-none overflow-hidden">
-        <div className="absolute inset-0 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 bg-gradient-to-r from-red-500/20 to-rose-500/20"></div>
+        <div className="absolute inset-0 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 bg-gradient-to-r from-blue-500/20 to-blue-500/20"></div>
         <span className="absolute inset-0 flex items-center justify-center gap-2 text-sm group-hover:gap-3 transition-all duration-300">
           <span className="bg-gradient-to-r from-gray-200 to-white bg-clip-text text-transparent font-medium z-10">
             {text}
@@ -82,9 +82,9 @@ const CTAButton = memo(({ href, text, icon: Icon }) => (
 const SocialLink = memo(({ icon: Icon, link }) => (
   <a href={link} target="_blank" rel="noopener noreferrer">
     <button className="group relative p-3">
-      <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-rose-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
-      <div className="relative rounded-xl bg-black/50 backdrop-blur-xl p-2 flex items-center justify-center border border-white/10 group-hover:border-red-500/30 transition-all duration-300">
-        <Icon className="w-5 h-5 text-gray-400 group-hover:text-red-400 transition-colors" />
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
+      <div className="relative rounded-xl bg-black/50 backdrop-blur-xl p-2 flex items-center justify-center border border-white/10 group-hover:border-blue-500/30 transition-all duration-300">
+        <Icon className="w-5 h-5 text-gray-400 group-hover:text-blue-400 transition-colors" />
       </div>
     </button>
   </a>
@@ -121,16 +121,16 @@ const LaptopShowcase = memo(() => (
         }}
       />
       <div className="absolute inset-0 rounded-[34px] overflow-hidden">
-        <div className="absolute -top-1/2 left-0 right-0 h-1/2 bg-gradient-to-b from-red-500/12 via-red-500/10 to-transparent animate-scanline" />
+        <div className="absolute -top-1/2 left-0 right-0 h-1/2 bg-gradient-to-b from-blue-500/12 via-blue-500/10 to-transparent animate-scanline" />
         <div className="absolute top-0 -left-full h-full w-1/3 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-20 animate-[shine_6s_ease-in-out_infinite]" />
       </div>
 
       <div className="absolute top-4 left-6 right-6 flex items-center justify-between text-[0.6rem] uppercase tracking-[0.35em] text-gray-400">
         <div className="flex items-center gap-2">
-          <span className="w-2.5 h-2.5 rounded-full bg-red-500/90 shadow-[0_0_10px_rgba(239,68,68,0.8)]" />
+          <span className="w-2.5 h-2.5 rounded-full bg-blue-500/90 shadow-[0_0_10px_rgba(239,68,68,0.8)]" />
           <span>System Online</span>
         </div>
-        <span className="text-red-300/80">IT Core</span>
+        <span className="text-blue-300/80">IT Core</span>
       </div>
 
       <div className="absolute inset-0 flex items-center justify-center">
@@ -139,47 +139,47 @@ const LaptopShowcase = memo(() => (
             <div className="absolute inset-[1px] rounded-[23px] bg-gradient-to-br from-[#0b1326]/95 via-[#0c1a2d]/90 to-[#0a101f]/95 border border-white/10 shadow-[0_18px_45px_rgba(0,0,0,0.6)]">
               <div className="absolute inset-0 rounded-[23px] bg-[radial-gradient(circle_at_top,rgba(244,63,94,0.18),transparent_65%)]" />
               <div className="absolute top-3 left-4 right-4 flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-red-400/80" />
-                <span className="w-2 h-2 rounded-full bg-rose-400/60" />
+                <span className="w-2 h-2 rounded-full bg-blue-400/80" />
+                <span className="w-2 h-2 rounded-full bg-blue-400/60" />
                 <span className="w-2 h-2 rounded-full bg-white/20" />
-                <span className="ml-auto text-[0.55rem] uppercase tracking-[0.2em] text-red-300/70">console</span>
+                <span className="ml-auto text-[0.55rem] uppercase tracking-[0.2em] text-blue-300/70">console</span>
               </div>
 
               <div className="absolute left-4 right-4 top-10 grid grid-cols-[1.2fr_0.8fr] gap-4">
                 <div className="space-y-3">
                   <div className="flex items-center gap-2 text-[0.55rem] text-gray-400">
-                    <Code2 className="w-3 h-3 text-red-300" />
+                    <Code2 className="w-3 h-3 text-blue-300" />
                     <span>build /app</span>
                   </div>
                   <div className="space-y-2">
-                    <div className="h-2 w-4/5 rounded-full bg-gradient-to-r from-red-400/70 to-transparent animate-pulse" />
-                    <div className="h-2 w-3/5 rounded-full bg-gradient-to-r from-rose-400/60 to-transparent" />
-                    <div className="h-2 w-5/6 rounded-full bg-gradient-to-r from-red-400/50 to-transparent" />
-                    <div className="h-2 w-2/3 rounded-full bg-gradient-to-r from-rose-400/40 to-transparent" />
-                    <div className="h-2 w-1/2 rounded-full bg-gradient-to-r from-red-400/40 to-transparent" />
+                    <div className="h-2 w-4/5 rounded-full bg-gradient-to-r from-blue-400/70 to-transparent animate-pulse" />
+                    <div className="h-2 w-3/5 rounded-full bg-gradient-to-r from-blue-400/60 to-transparent" />
+                    <div className="h-2 w-5/6 rounded-full bg-gradient-to-r from-blue-400/50 to-transparent" />
+                    <div className="h-2 w-2/3 rounded-full bg-gradient-to-r from-blue-400/40 to-transparent" />
+                    <div className="h-2 w-1/2 rounded-full bg-gradient-to-r from-blue-400/40 to-transparent" />
                   </div>
                 </div>
                 <div className="rounded-xl bg-white/5 border border-white/10 p-3 backdrop-blur">
                   <div className="flex items-center gap-2 text-[0.55rem] uppercase tracking-[0.2em] text-gray-400">
-                    <Cpu className="w-3 h-3 text-rose-300" />
+                    <Cpu className="w-3 h-3 text-blue-300" />
                     <span>runtime</span>
                   </div>
                   <div className="mt-3 space-y-3">
                     <div className="h-2 rounded-full bg-white/5 overflow-hidden">
-                      <div className="h-full w-4/5 rounded-full bg-gradient-to-r from-red-400/80 to-rose-400/30 animate-pulse" />
+                      <div className="h-full w-4/5 rounded-full bg-gradient-to-r from-blue-400/80 to-blue-400/30 animate-pulse" />
                     </div>
                     <div className="h-2 rounded-full bg-white/5 overflow-hidden">
-                      <div className="h-full w-2/3 rounded-full bg-gradient-to-r from-rose-400/70 to-red-400/30" />
+                      <div className="h-full w-2/3 rounded-full bg-gradient-to-r from-blue-400/70 to-blue-400/30" />
                     </div>
                     <div className="h-2 rounded-full bg-white/5 overflow-hidden">
-                      <div className="h-full w-3/5 rounded-full bg-gradient-to-r from-red-400/60 to-rose-400/20" />
+                      <div className="h-full w-3/5 rounded-full bg-gradient-to-r from-blue-400/60 to-blue-400/20" />
                     </div>
                   </div>
                 </div>
               </div>
 
               <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-[0.55rem] text-gray-400">
-                <span className="text-red-300/70">build ok</span>
+                <span className="text-blue-300/70">build ok</span>
                 <span>latency 12ms</span>
               </div>
             </div>
@@ -187,31 +187,31 @@ const LaptopShowcase = memo(() => (
 
           <div className="absolute left-1/2 -translate-x-1/2 -bottom-[18%] w-[118%] h-[24%] rounded-[26px] bg-gradient-to-b from-[#0a1326]/90 to-[#0a0f1f]/85 border border-white/10 shadow-[0_14px_30px_rgba(0,0,0,0.6)]">
             <div className="absolute top-2 left-1/2 -translate-x-1/2 w-20 h-2 rounded-full bg-white/10" />
-            <div className="absolute bottom-2 left-8 right-8 h-[2px] bg-gradient-to-r from-transparent via-rose-400/50 to-transparent" />
+            <div className="absolute bottom-2 left-8 right-8 h-[2px] bg-gradient-to-r from-transparent via-blue-400/50 to-transparent" />
           </div>
         </div>
       </div>
 
       <div className="absolute bottom-6 left-6 right-6 space-y-2">
-        <div className="h-1.5 w-2/3 rounded-full bg-gradient-to-r from-red-500/70 to-transparent" />
-        <div className="h-1.5 w-1/2 rounded-full bg-gradient-to-r from-rose-500/60 to-transparent" />
-        <div className="h-1.5 w-3/4 rounded-full bg-gradient-to-r from-red-400/40 to-transparent" />
+        <div className="h-1.5 w-2/3 rounded-full bg-gradient-to-r from-blue-500/70 to-transparent" />
+        <div className="h-1.5 w-1/2 rounded-full bg-gradient-to-r from-blue-500/60 to-transparent" />
+        <div className="h-1.5 w-3/4 rounded-full bg-gradient-to-r from-blue-400/40 to-transparent" />
       </div>
 
       <div className="absolute left-5 top-16 hidden sm:flex items-center gap-2 px-3 py-2 rounded-full bg-white/5 border border-white/10 text-[0.65rem] text-gray-300 backdrop-blur-xl shadow-[0_10px_25px_rgba(0,0,0,0.35)] animate-float">
-        <Terminal className="w-4 h-4 text-red-300" />
+        <Terminal className="w-4 h-4 text-blue-300" />
         <span>CLI Shell</span>
       </div>
       <div className="absolute right-5 top-16 hidden sm:flex items-center gap-2 px-3 py-2 rounded-full bg-white/5 border border-white/10 text-[0.65rem] text-gray-300 backdrop-blur-xl shadow-[0_10px_25px_rgba(0,0,0,0.35)] animate-float-delayed">
-        <CloudDownload className="w-4 h-4 text-rose-300" />
+        <CloudDownload className="w-4 h-4 text-blue-300" />
         <span>Cloud Sync</span>
       </div>
       <div className="absolute left-8 bottom-16 hidden sm:flex items-center gap-2 px-3 py-2 rounded-full bg-white/5 border border-white/10 text-[0.65rem] text-gray-300 backdrop-blur-xl shadow-[0_10px_25px_rgba(0,0,0,0.35)] animate-float-delayed">
-        <Server className="w-4 h-4 text-red-300" />
+        <Server className="w-4 h-4 text-blue-300" />
         <span>Server Node</span>
       </div>
       <div className="absolute right-8 bottom-16 hidden sm:flex items-center gap-2 px-3 py-2 rounded-full bg-white/5 border border-white/10 text-[0.65rem] text-gray-300 backdrop-blur-xl shadow-[0_10px_25px_rgba(0,0,0,0.35)] animate-float">
-        <ShieldCheck className="w-4 h-4 text-rose-300" />
+        <ShieldCheck className="w-4 h-4 text-blue-300" />
         <span>Secure</span>
       </div>
     </div>
@@ -350,7 +350,7 @@ const Home = () => {
                   <span className="text-xl md:text-2xl bg-gradient-to-r from-gray-100 to-gray-300 bg-clip-text text-transparent font-light">
                     {text}
                   </span>
-                  <span className="w-[3px] h-6 bg-gradient-to-t from-[#ef4444] to-[#f43f5e] ml-1 animate-blink"></span>
+                  <span className="w-[3px] h-6 bg-gradient-to-t from-[#3b82f6] to-[#60a5fa] ml-1 animate-blink"></span>
                 </div>
 
                 {/* Description */}
@@ -399,3 +399,5 @@ const Home = () => {
 };
 
 export default memo(Home);
+
+

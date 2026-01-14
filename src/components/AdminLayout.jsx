@@ -79,7 +79,7 @@ const AdminLayout = ({ children, activePage }) => {
             </span>
             <button
               onClick={handleLogout}
-              className="flex items-center gap-2 px-4 py-2 bg-red-500/10 hover:bg-red-500/20 text-red-400 rounded-lg transition-colors"
+              className="flex items-center gap-2 px-4 py-2 bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 rounded-lg transition-colors"
             >
               <LogOut className="w-4 h-4" />
               <span className="hidden sm:block">Logout</span>
@@ -140,3 +140,5 @@ const AdminLayout = ({ children, activePage }) => {
 };
 
 export default AdminLayout;
+
+

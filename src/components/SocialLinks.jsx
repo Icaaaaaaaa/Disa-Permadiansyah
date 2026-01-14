@@ -153,7 +153,7 @@ const SocialLinks = () => {
         className="text-xl font-semibold text-white mb-6 flex items-center gap-2"
         data-aos="fade-down" 
       >
-        <span className="inline-block w-8 h-1 bg-red-500 rounded-full"></span>
+        <span className="inline-block w-8 h-1 bg-blue-500 rounded-full"></span>
         Connect With Me
       </h3>
 
@@ -342,3 +342,5 @@ const SocialLinks = () => {
 };
 
 export default SocialLinks;
+
+

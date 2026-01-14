@@ -195,3 +195,5 @@ const Certificate = ({ ImgSertif }) => {
 }
 
 export default Certificate
+
+
